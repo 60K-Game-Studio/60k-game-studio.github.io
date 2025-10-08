@@ -71,6 +71,9 @@ $('.site-search').click(function () {
 
   $('.gallery').owlCarousel({
     loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
     margin: 30,
     lazyLoad: true,
     nav: false,

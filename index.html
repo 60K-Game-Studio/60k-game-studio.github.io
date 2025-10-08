@@ -56,7 +56,7 @@
                                 <li onclick="scrollto('about')"><a href="#">About</a></li>
                                 <li onclick="scrollto('service')"><a href="#">Service</a></li>
                                 <!-- <li onclick="scrollto('portfolio')"><a href="#">What We Do</a> </li> -->
-                                <li onclick="scrollto('gallary')"><a href="#">Our Gallary</a> </li>
+                                <li onclick="scrollto('gallary')"><a href="#">Gallary</a> </li>
                                 <!-- <li onclick="scrollto('testimonial')"><a href="#">Review</a></li> -->
                                 <li onclick="scrollto('team')"><a href="#">Team</a></li>
                                 <!-- <li onclick="scrollto('blog')"><a href="#">Blog</a></li> -->
@@ -90,7 +90,7 @@
                         <div class="owl-stage">
                             <div class="owl-item">
                                 <div class="single_slider d-flex align-items-center">
-                                    <img src="static/picture/slider_1.jpg" alt="">
+                                    <img src="static/picture/head_pic.jpg" alt="">
                                     <div class="slider-content">
                                         <h1>Creative<br>Visuals & Interactive<br>Experiences</h1>
                                         <!-- <button class="cc-btn">Read More</button> -->
@@ -123,7 +123,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-img">
-                        <img src="static/picture/cms_1.jpg" class="img-fluid" alt="">
+                        <img src="static/picture/60k_studio.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -184,7 +184,7 @@
                 <div class="col-lg-3">
                     <div class="service-part">
                         <div class="service-icon">
-                            <img src="static/picture/shows.png" alt="">
+                            <img src="static/picture/icons_game_dev.png" alt="">
                         </div>
                         <div class="service-content">
                             <h4>Game Dev</h4>
@@ -196,7 +196,7 @@
                 <div class="col-lg-3">
                     <div class="service-part">
                         <div class="service-icon">
-                            <img src="static/picture/awards.png" alt="">
+                            <img src="static/picture/icons_art_design.png" alt="">
                         </div>
                         <div class="service-content">
                             <h4>Art & Design</h4>
@@ -208,7 +208,7 @@
                 <div class="col-lg-3">
                     <div class="service-part">
                         <div class="service-icon">
-                            <img src="static/picture/directors.png" alt="">
+                            <img src="static/picture/icons_anim_vfx.png" alt="">
                         </div>
                         <div class="service-content">
                             <h4>Anim & VFX</h4>
@@ -220,7 +220,7 @@
                 <div class="col-lg-3">
                     <div class="service-part">
                         <div class="service-icon">
-                            <img src="static/picture/festivals.png" alt="">
+                            <img src="static/picture/icons_tech.png" alt="">
                         </div>
                         <div class="service-content">
                             <h4>Tech Solutions</h4>
@@ -333,56 +333,24 @@
             <div class="row">
                 <div class="gallery owl-carousel owl-loaded owl-drag">
                     <div class="owl-stage-outer">
-                        <div class="owl-stage">
-                            <div class="owl-item">
-                                <div class="single_slider align-items-center">
-                                    <div class="gallery-section">
-                                        <div class="gallery-image">
-                                            <img src="static/picture/011.jpg" alt="">
+                        <div class="owl-stage" id="gallery-inner-html">
+                            <script>
+                                let html = "";
+                                for (let i = 1; i <= 25; i++) {
+                                    html += `
+                                    <div class="owl-item">
+                                        <div class="single_slider align-items-center">
+                                            <div class="gallery-section">
+                                                <div class="gallery-image">
+                                                    <img src="static/picture/gallery/${i}.jpg" alt="">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="single_slider d-flex align-items-center">
-                                    <div class="gallery-section">
-                                        <div class="gallery-image">
-                                            <img src="static/picture/021.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="single_slider d-flex align-items-center">
-                                    <div class="gallery-section">
-                                        <div class="gallery-image">
-                                            <img src="static/picture/031.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="single_slider d-flex align-items-center">
-                                    <div class="gallery-section">
-                                        <div class="gallery-image">
-                                            <img src="static/picture/041.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="single_slider d-flex align-items-center">
-                                    <div class="gallery-section">
-                                        <div class="gallery-image">
-                                            <img src="static/picture/051.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    `;
+                                }
+                                document.getElementById("gallery-inner-html").innerHTML = html;
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -479,7 +447,7 @@
                                 <div class="single_slider d-flex align-items-center">
                                     <div class="team-section">
                                         <div class="team-img">
-                                            <img src="static/picture/01.png" alt="">
+                                            <img src="static/picture/heads/1.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -493,7 +461,7 @@
                                 <div class="single_slider d-flex align-items-center">
                                     <div class="team-section">
                                         <div class="team-img">
-                                            <img src="static/picture/02.png" alt="">
+                                            <img src="static/picture/heads/2.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -507,7 +475,7 @@
                                 <div class="single_slider d-flex align-items-center">
                                     <div class="team-section">
                                         <div class="team-img">
-                                            <img src="static/picture/03.png" alt="">
+                                            <img src="static/picture/heads/3.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -521,7 +489,7 @@
                                 <div class="single_slider d-flex align-items-center">
                                     <div class="team-section">
                                         <div class="team-img">
-                                            <img src="static/picture/04.png" alt="">
+                                            <img src="static/picture/heads/4.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
