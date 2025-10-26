@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,6 @@
     <link rel="stylesheet" href="static/css/reboot_style.css">
     <link rel="stylesheet" href="static/css/reboot_media.css">
 
-    <script>
-        const userLang = navigator.language || navigator.userLanguage;
-        if (userLang.startsWith('zh')) {
-            if (!window.location.pathname.includes('index_zh.html')) {
-                window.location.href = 'index_zh.html';
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -60,13 +52,13 @@
                         </div>
                         <div class="navbar-collapse">
                             <ul class="navbar-nav">
-                                <li onclick="scrollto('home')"><a href="#">Home</a></li>
-                                <li onclick="scrollto('about')"><a href="#">About</a></li>
-                                <li onclick="scrollto('service')"><a href="#">Service</a></li>
+                                <li onclick="scrollto('home')"><a href="#">主页</a></li>
+                                <li onclick="scrollto('about')"><a href="#">关于</a></li>
+                                <li onclick="scrollto('service')"><a href="#">服务</a></li>
                                 <!-- <li onclick="scrollto('portfolio')"><a href="#">What We Do</a> </li> -->
-                                <li onclick="scrollto('gallary')"><a href="#">Gallary</a> </li>
+                                <li onclick="scrollto('gallary')"><a href="#">作品</a> </li>
                                 <!-- <li onclick="scrollto('testimonial')"><a href="#">Review</a></li> -->
-                                <li onclick="scrollto('team')"><a href="#">Team</a></li>
+                                <li onclick="scrollto('team')"><a href="#">团队</a></li>
                                 <!-- <li onclick="scrollto('blog')"><a href="#">Blog</a></li> -->
                             </ul>
                         </div>
@@ -100,7 +92,7 @@
                                 <div class="single_slider d-flex align-items-center">
                                     <img src="static/picture/head_pic.jpg" alt="">
                                     <div class="slider-content">
-                                        <h1>Creative<br>Visuals & Interactive<br>Experiences</h1>
+                                        <h1>创意、视觉<br/>&<br/>互动体验</h1>
                                         <!-- <button class="cc-btn">Read More</button> -->
                                     </div>
                                 </div>
@@ -136,13 +128,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-description">
-                        <h2>60K Game Studio</h2>
+                        <h2>60K 游戏工作室</h2>
                         <p>
-                            60K Game Studio is an independent game development team founded by passionate creators who believe that every great experience begins with bold ideas and solid craftsmanship.
-                            We focus on building original gameplay systems, expressive characters, and visually captivating worlds — all powered by our custom-built frameworks and artistic direction.
-                            <br><br>
-                            Our goal is to create games that feel alive, with deep mechanics, unique personality, and unforgettable moments. 
-                            From code architecture and animation systems to shaders and storytelling, everything we build is driven by creativity, precision, and heart.
+                            60K 游戏工作室是一支由充满热情的创作者组成的独立游戏开发团队，我们相信每一次体验都能够凝聚新的创意与有趣的玩法。<br><br>
+                            我们专注于打造原创的玩法系统、富有表现力的角色，以及视觉上引人入胜的世界——这一切都由我们自主构建的框架和艺术方向所驱动。<br><br>
+                            我们的目标是创造充满生命力的游戏，拥有深度的机制、独特的个性和令人难忘的瞬间。无论是代码架构、动画系统、着色器还是叙事设计，我们的一切创作都源于创造力、精准与热忱。
                         </p>
                         <!-- <button class="cc-btn">Read more</button> -->
                     </div>
@@ -185,8 +175,8 @@
     <div class="cc-service-area" id="service">
         <div class="container">
             <div class="section-title">
-                <h5>Best Services</h5>
-                <h2>Our Production</h2>
+                <h5>最好的服务</h5>
+                <h2>我们都提供哪些服务</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3">
@@ -195,8 +185,8 @@
                             <img src="static/picture/icons_game_dev.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h4>Game Dev</h4>
-                            <p>We create original games with solid systems and fun.</p>
+                            <h4>游戏开发</h4>
+                            <p>我们打造拥有扎实系统与乐趣的原创游戏</p>
                         </div>
                     </div>
                 </div>
@@ -207,8 +197,8 @@
                             <img src="static/picture/icons_art_design.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h4>Art & Design</h4>
-                            <p>Stylish characters & worlds with a unique touch.</p>
+                            <h4>艺术与设计</h4>
+                            <p>以独特风格塑造角色与世界场景</p>
                         </div>
                     </div>
                 </div>
@@ -219,8 +209,8 @@
                             <img src="static/picture/icons_anim_vfx.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h4>Anim & VFX</h4>
-                            <p>Dynamic motion and effects that feel alive.</p>
+                            <h4>动画与特效</h4>
+                            <p>充满生命力的动态动作与视觉效果</p>
                         </div>
                     </div>
                 </div>
@@ -231,8 +221,8 @@
                             <img src="static/picture/icons_tech.png" alt="">
                         </div>
                         <div class="service-content">
-                            <h4>Tech Solutions</h4>
-                            <p>Custom tools and systems for smooth gameplay.</p>
+                            <h4>技术方案</h4>
+                            <p>为流畅游戏体验打造的自定义工具与系统</p>
                         </div>
                     </div>
                 </div>
@@ -335,8 +325,8 @@
     <div class="cc-gallery-area" id="gallary">
         <div class="container-fluid">
             <div class="section-title">
-                <h5>Now In Studio</h5>
-                <h2>Our Work Gallery</h2>
+                <h5>工作室最新动态</h5>
+                <h2>作品展示</h2>
             </div>
             <div class="row">
                 <div class="gallery owl-carousel owl-loaded owl-drag">
@@ -444,8 +434,8 @@
     <div class="cc-team-area" id="team">
         <div class="container">
             <div class="section-title">
-                <h5>Our Teams</h5>
-                <h2>CAST & CREW</h2>
+                <h5>我们的团队</h5>
+                <h2>主要团队成员</h2>
             </div>
             <div class="row">
                 <div class="team owl-carousel owl-loaded owl-drag">
@@ -460,8 +450,8 @@
                                     </div>
                                 </div>
                                 <div class="team-description">
-                                    <h4>Leif</h4>
-                                    <p>Developer</p>
+                                    <h4>磊</h4>
+                                    <p>开发者</p>
                                 </div>
                             </div>
 
@@ -474,8 +464,8 @@
                                     </div>
                                 </div>
                                 <div class="team-description">
-                                    <h4>Milo</h4>
-                                    <p>UI Designer</p>
+                                    <h4>苗</h4>
+                                    <p>UI设计师</p>
                                 </div>
                             </div>
 
@@ -488,8 +478,8 @@
                                     </div>
                                 </div>
                                 <div class="team-description">
-                                    <h4>Dongyang</h4>
-                                    <p>Concept Artist</p>
+                                    <h4>东阳</h4>
+                                    <p>原画设计师</p>
                                 </div>
                             </div>
 
@@ -502,8 +492,8 @@
                                     </div>
                                 </div>
                                 <div class="team-description">
-                                    <h4>Zhuohang</h4>
-                                    <p>Animator</p>
+                                    <h4>卓航</h4>
+                                    <p>动画设计师</p>
                                 </div>
                             </div>
                         </div>
@@ -650,9 +640,9 @@
                                 <div class="subscribe-form">
                                     <form action="mailto:60KGAMESTUDIO@GMAIL.COM">
                                         <!-- <input type="text" required=""> -->
-                                         <h4>CONTACT US</h4>
-                                         <p>Email: <span id="email" style="cursor:pointer;" onclick="copyEmail()">60KGAMESTUDIO@GMAIL.COM</span> (Click To Copy) </p>
-                                        <button>Send Email to 60KGAMESTUDIO@GMAIL.COM</button>
+                                        <h4>联系我们</h4>
+                                        <p>邮箱: <span id="email" style="cursor:pointer;" onclick="copyEmail()">60KGAMESTUDIO@GMAIL.COM</span>（点击复制）</p>
+                                        <button>发送邮件到 60KGAMESTUDIO@GMAIL.COM</button>
                                     </form>
                                 </div>
                             </div>
@@ -789,10 +779,11 @@
     function copyEmail() {
         const email = document.getElementById('email').innerText;
         navigator.clipboard.writeText(email).then(() => {
-            alert('Email copied to clipboard!');
+            alert('邮箱已复制到剪贴板！');
         });
     }
     </script>
+
 
 </body>
 
